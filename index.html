@@ -7,7 +7,12 @@
   <meta name="description" content="বাংলা, হিন্দি ও ইংরেজি গানের লিরিক্স, গিটার কর্ডস, টিউটোরিয়াল ও কভার এক জায়গায়।" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://akbmusix.pages.dev/" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="AKBmusix | Lyrics, Chords, Tutorials & Covers" />
+  <meta property="og:description" content="বাংলা, হিন্দি ও ইংরেজি গানের লিরিক্স, কর্ডস, টিউটোরিয়াল ও কভার।" />
+  <meta property="og:url" content="https://akbmusix.pages.dev/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="/enhancements.css" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AKBmusix","url":"https://akbmusix.pages.dev/","potentialAction":{"@type":"SearchAction","target":"https://akbmusix.pages.dev/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -40,13 +45,15 @@
       <form id="requestForm" class="stack-form">
         <input id="requestName" maxlength="60" placeholder="Name (optional)" />
         <select id="requestType" aria-label="Request type">
-          <option value="Lyrics request">Lyrics request</option>
-          <option value="Chords request">Chords request</option>
-          <option value="Tutorial request">Tutorial request</option>
-          <option value="Correction">Correction</option>
-          <option value="Suggestion">Advice / Suggestion</option>
+          <option>Song Request</option>
+          <option>Lyrics Correction</option>
+          <option>Chords Correction</option>
+          <option>Tutorial Request</option>
+          <option>Cover Suggestion</option>
+          <option>General Advice / Suggestion</option>
         </select>
         <input id="requestSong" maxlength="120" placeholder="Song name (if applicable)" />
+        <input id="requestUrl" type="url" maxlength="500" placeholder="Relevant URL (optional)" />
         <textarea id="requestMessage" maxlength="1200" required placeholder="আপনার অনুরোধ বা পরামর্শ লিখুন..."></textarea>
         <button class="primary-btn" type="submit">Send Request</button>
         <p id="requestStatus" class="form-note" aria-live="polite"></p>
@@ -59,7 +66,7 @@
     </section>
   </main>
 
-  <footer>© <span id="year"></span> AKBmusix</footer>
+  <footer>© <span id="year"></span> AKBmusix · <a href="/about.html">About</a> · <a href="/legal.html">Legal</a> · <a href="/contact.html">Contact</a></footer>
   <script src="script.js" defer></script>
 </body>
 </html>

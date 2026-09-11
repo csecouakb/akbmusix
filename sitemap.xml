@@ -5,4 +5,6 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://akbmusix.pages.dev/about.html</loc></url>
+  <url><loc>https://akbmusix.pages.dev/contact.html</loc></url>
 </urlset>

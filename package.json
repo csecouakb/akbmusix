@@ -1,0 +1,9 @@
+{
+  "name": "akbmusix",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check script.js && node --check song.js && node --check admin.js && node --check functions/[[path]].js && node scripts/check.mjs"
+  }
+}
