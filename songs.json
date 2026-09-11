@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "sample-song",
+    "title": "Sample Song",
+    "artist": "AKBmusix Demo",
+    "language": "বাংলা",
+    "key": "C",
+    "capo": "No Capo",
+    "strumming": "D D U U D U",
+    "lyrics": "[C] এটি একটি নমুনা গান\n[G] এখানে কর্ড লাইনের সাথে দেখা যাবে\n[Am] নিজের গান যোগ করলে\n[F] এই জায়গায় লিরিক্স দেখাবে",
+    "tutorials": [
+      {"label": "YouTube Tutorial", "url": "https://www.youtube.com/"}
+    ],
+    "covers": [
+      {"label": "YouTube Cover", "url": "https://www.youtube.com/"}
+    ]
+  }
+]
