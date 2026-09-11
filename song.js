@@ -1,5 +1,5 @@
 const themeScript=document.createElement('script');themeScript.src='/theme.js';themeScript.defer=true;document.head.append(themeScript);const root=document.getElementById('songRoot'),chromatic=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
-let shift=0,showChords=false,fontSize=18,song=JSON.parse(root.dataset.song||'null');
+const intentText=`${new URLSearchParams(location.search).get('view')||''} ${document.referrer||''}`.toLowerCase();let shift=0,showChords=/(chord|কর্ড)/.test(intentText)&&!/(lyrics|লিরিক্স)/.test(intentText),fontSize=18,song=JSON.parse(root.dataset.song||'null');
 const esc=(s='')=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function deviceId(){let id=localStorage.getItem('akb_device');if(!id){id=crypto.randomUUID();localStorage.setItem('akb_device',id)}return id}
 function transposeChord(chord,steps){return chord.replace(/[A-G](?:#|b)?/g,n=>{const flat={Db:'C#',Eb:'D#',Gb:'F#',Ab:'G#',Bb:'A#'}[n]||n,idx=chromatic.indexOf(flat);return idx<0?n:chromatic[(idx+steps+120)%12]})}
