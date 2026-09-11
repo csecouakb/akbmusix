@@ -1,0 +1,1 @@
+ALTER TABLE songs ADD COLUMN pronunciation TEXT NOT NULL DEFAULT '';
