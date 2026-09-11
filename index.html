@@ -13,7 +13,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="./">AKBmusix</a>
-    <nav><a href="#songs">Songs</a><a href="#about">About</a></nav>
+    <nav><a href="#songs">Songs</a><a href="#request">Request</a><a href="#about">About</a></nav>
   </header>
 
   <main>
@@ -29,6 +29,28 @@
     <section id="songs" class="section">
       <div class="section-head"><h2>গানসমূহ</h2><span id="songCount"></span></div>
       <div id="songGrid" class="song-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="request" class="section request-card">
+      <div>
+        <p class="eyebrow">Request & Suggestion</p>
+        <h2>কোন গান চান?</h2>
+        <p class="muted">কোনো গানের Lyrics, Chords, Tutorial অথবা সাইট নিয়ে পরামর্শ চাইলে লিখে পাঠাতে পারবেন। নাম দেওয়া বাধ্যতামূলক নয়।</p>
+      </div>
+      <form id="requestForm" class="stack-form">
+        <input id="requestName" maxlength="60" placeholder="Name (optional)" />
+        <select id="requestType" aria-label="Request type">
+          <option value="Lyrics request">Lyrics request</option>
+          <option value="Chords request">Chords request</option>
+          <option value="Tutorial request">Tutorial request</option>
+          <option value="Correction">Correction</option>
+          <option value="Suggestion">Advice / Suggestion</option>
+        </select>
+        <input id="requestSong" maxlength="120" placeholder="Song name (if applicable)" />
+        <textarea id="requestMessage" maxlength="1200" required placeholder="আপনার অনুরোধ বা পরামর্শ লিখুন..."></textarea>
+        <button class="primary-btn" type="submit">Send Request</button>
+        <p id="requestStatus" class="form-note" aria-live="polite"></p>
+      </form>
     </section>
 
     <section id="about" class="section info-card">
