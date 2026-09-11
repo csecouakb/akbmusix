@@ -5,5 +5,5 @@ compatibility_date = "2026-09-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "akbmusix-db"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "ffa5ecbf-f8aa-4e8c-a6cf-a73e06a58c33"
 migrations_dir = "migrations"
